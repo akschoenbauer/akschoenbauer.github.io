@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Me</title>
+  </head>
+  <body>
+    <p class="test">Test</p>
+    <p>Test</p>
+#<!-- NOTE: this image will not display correctly/at all b/c the <fieldset>
+  is not on my computer
+</fieldset> -->
+    <img src="/img/atlslogo.jpg" alt="black bar with atlas logo">
+    <h3 id="topofpage">This is the top.</h3>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ol>
+<br>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+<br>
+  <p><a href="www.pitchfork.com">Pitchfork Link</a></p>
+  <p><a href="#topofpage">Back to top</a></p>
+</html>
