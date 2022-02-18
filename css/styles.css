@@ -53,14 +53,14 @@ h6 {
   font-size: 12px;
 }
 
-a:link {
-  color:#D94E73;
-  font-family: "Josefin Sans", sans-serif;
+a:hover {
+  color:#FFC200;
   text-decoration: underline;
 }
 
-a:hover {
-  color:#FFC200;
+a:link {
+  color:#D94E73;
+  font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
 }
 
