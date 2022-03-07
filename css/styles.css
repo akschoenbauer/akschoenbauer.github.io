@@ -68,7 +68,7 @@ a:visited {
 }
 
 /* for mobile: */
-@media all and (max-width: 400px) {
+@media all and (max-width: 699px) {
   body {
     background-color: #FFF6F0;
   }
@@ -204,7 +204,7 @@ a:visited {
 }
 
 /* for desktop: */
-@media all and (min-width: 401px) {
+@media all and (min-width: 700px) {
   body {
     background-color: #FFF6F0;
   }
