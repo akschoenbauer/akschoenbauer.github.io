@@ -1,0 +1,29 @@
+div {
+  background-color: orange;
+  padding: 20px;
+}
+
+p {
+  background-color: yellow;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  div {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: purple;
+    padding: 20px;
+  }
+
+  p {
+    background-color: cyan;
+    flex: 1;
+  }
+
+  .test {
+    width: 100px;
+  }
+}

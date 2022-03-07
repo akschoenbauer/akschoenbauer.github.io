@@ -4,10 +4,8 @@ body {
 
 h1 {
   color: #2081C3;
-  font-family: "Funkydori", sans-serif;
+  font-family: "Funkydori", cursive;
   font-size: 40px;
-  padding: 50px 0px 0px 0px;
-  text-align: center;
   line-height: 50%;
 }
 
@@ -16,7 +14,7 @@ h2 {
   font-family: "Funkydori", cursive;
   font-size: 32px;
   padding: 15px 0px 0px 0px;
-  line-height: 50%
+  line-height: 90%;
 }
 
 h3 {
@@ -31,7 +29,7 @@ p {
   color: #2081C3;
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
-  line-height: 16px
+  line-height: 16px;
 }
 
 h4 {
@@ -69,52 +67,145 @@ a:visited {
   text-decoration: underline;
 }
 
-.rainbowbar img {
-  width: 100%;
-  height: 50px;
+/* for mobile: */
+@media screen and (max-width: 699px) {
+  .rainbowbar img {
+    width: 100%;
+    height: 50px;
+  }
+
+  .rainbowbar {
+    width:100%;
+    height:50px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    background-color: #FFF6F0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav-links {
+    list-style: none;
+  }
+
+  .nav-item {
+    display: inline-block;
+    padding: 10px 5px;
+  }
+
+  #page-title {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    align-content: center;
+    background-color: green;
+    padding: 20px 50px 20px 50px;
+    margin: 5px 50px 5px 50px;
+  }
+
+  .profilepic {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutme {
+    margin: 50px;
+  }
+
+  img[class] {
+    border-radius: 10%;
+    border: 6px dashed #2081C3;
+  }
+
+  hr {
+    height: 5px;
+    color: #FFC200;
+    background-color: #FFC200;
+    border: solid;
+  }
 }
 
-.rainbowbar {
-  width:100%;
-  height:50px;
-}
+/* for desktop: */
+@media screen and (min-width: 700px) {
+  .rainbowbar img {
+    width: 100%;
+    height: 50px;
+  }
 
-.right-align {
-  position: absolute;
-  right: 150px;
-  width: 400px;
-  padding: 10px;
-}
+  .rainbowbar {
+    width:100%;
+    height:50px;
+  }
 
-.about-me {
-  position: absolute;
-  left: 100px;
-  width: 700px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
+  .nav-bar {
+    width: 100%;
+    background-color: #FFF6F0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-img[class] {
-  border-radius: 10%;
-  border: 6px dashed #2081C3;
-}
+  .nav-links {
+    list-style: none;
+  }
 
-hr {
-  height: 5px;
-  color: #FFC200;
-  background-color: #FFC200;
-  border: solid;
-}
+  .nav-item {
+    display: inline-block;
+    padding: 10px 5px;
+  }
 
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
+  #page-title {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
 
-li {
-  float: left;
-  display: block;
-  padding: 10px;
-  background-color: #FFF6F0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    background-color: purple;
+    padding: 20px 100px 20px 100px;
+    margin: 10px 100px 10px 100px;
+  }
+
+  .aboutme {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin: 50px;
+  }
+
+  .profilepic {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    max-width: 80%;
+    min-width: 50%;
+    height: auto;
+    margin: 50px;
+  }
+
+  img[class] {
+    border-radius: 10%;
+    border: 6px dashed #2081C3;
+  }
+
+  hr {
+    height: 5px;
+    color: #FFC200;
+    background-color: #FFC200;
+    border: solid;
+  }
 }
