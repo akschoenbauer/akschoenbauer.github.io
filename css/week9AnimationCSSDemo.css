@@ -1,0 +1,68 @@
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    font-size: 300%;
+  }
+
+  50% {
+    margin-left: 40%;
+    width: 135%;
+    font-size: 300%;
+  }
+
+  75% {
+    margin-left: 20%;
+    width: 105%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    font-size: 1%;
+  }
+}
+
+.slide-in {
+  animation: 1s 5 alternate slidein;
+/*  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+*/
+}
+
+.slide-screen {
+  /* transition: <property> <duration> <timing-function> <delay> */
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+.slide-screen:hover {
+  font-size: 300%;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  /* transition: property duration timing-function delay */
+  /* by leaving delay out, it will just default to whatever the browser's default delay is */
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
