@@ -37,8 +37,6 @@ body {
   margin-right: 2rem;
 }
 
-/* need to figure out how to override link styling in nav bar */
-
 .nav-item:first-child {
   margin-right: auto;
   margin-left: 2rem;
@@ -113,13 +111,11 @@ h6 {
 }
 
 /* link styling */
-
 a {
   color: var(--pink);
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
 }
-
 
 a:visited {
   color: var(--orange);
@@ -131,10 +127,77 @@ a:hover {
   text-decoration: underline;
 }
 
+/* need to figure out how to override link styling in nav bar */
 .nav-item a:link{
   color: var(--pink);
   text-align: center;
   text-decoration: none;
+}
+
+.nav-item a:link:visited{
+  color: var(--pink);
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-item a:link:hover{
+  color: var(--yellow);
+  text-align: center;
+  text-decoration: none;
+}
+
+.work-grid {
+  display: grid;
+  height: 175vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+    "project1 project2"
+    "project3 project4"
+    "project5 project6";
+  grid-gap: 1.5rem;
+  margin: 1.5rem .5rem 2rem .5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: var(--cream);
+}
+
+#project1 {
+  background-color: var(--orange);
+  grid-area: project1;
+  border-radius: 1rem;
+  padding: 3rem 2rem 3rem 2rem;
+  text-align: center;
+}
+
+#project2 {
+  background-color: lightgreen;
+  grid-area: project2;
+  border-radius: 1rem;
+}
+
+#project3 {
+  background-color: var(--charcoal);
+  grid-area: project3;
+  border-radius: 1rem;
+}
+
+#project4 {
+  background-color: var(--pink);
+  grid-area: project4;
+  border-radius: 1rem;
+}
+
+#project5 {
+  background-color: var(--blue);
+  grid-area: project5;
+  border-radius: 1rem;
+}
+
+#project6 {
+  background-color: var(--yellow);
+  grid-area: project6;
+  border-radius: 1rem;
 }
 
 .grid-demo {
@@ -210,6 +273,20 @@ nav-item:first-child {
   align-self: center;
 }
 
+/* home page grid */
+.work-grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+  "project1"
+  "project2"
+  "project3"
+  "project4"
+  "project5"
+  "project6";
+}
+
+/* project page grid */
 .grid-demo {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
@@ -220,7 +297,7 @@ nav-item:first-child {
   "content1"
   "content2"
   "content3"
-  "footer"
+  "footer";
 }
 
 /*
