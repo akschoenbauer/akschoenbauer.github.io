@@ -38,10 +38,6 @@ body {
 }
 
 /* need to figure out how to override link styling in nav bar */
-.nav-item a:link{
-  text-align: center;
-  text-decoration: none;
-}
 
 .nav-item:first-child {
   margin-right: auto;
@@ -117,61 +113,76 @@ h6 {
 }
 
 /* link styling */
-a:hover {
-  color: var(--yellow);
-  text-decoration: underline;
-}
 
-a:link {
+a {
   color: var(--pink);
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
 }
+
 
 a:visited {
   color: var(--orange);
   text-decoration: underline;
 }
 
-.home-grid {
-  background-color: purple;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.nav-item a:link{
+  color: var(--pink);
   text-align: center;
-  align-content: center;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
 }
 
-#project-1 {
-  background-color: green;
-  grid-row-start: 1;
-  grid-row-end: 10;
+.grid-demo {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap: 1rem;
 }
 
-
-#project-2 {
-  background-color: green;
-  grid-column-start: 1;
-  grid-column-end: 3;
+nav {
+  background-color: var(--blue);
+  grid-area: nav;
 }
 
-#project-3 {
-  background-color: green;
+main {
+  background-color: var(--pink);
+  grid-area: main;
 }
 
-#project-4 {
-  background-color: green;
+#sidebar {
+  background-color: lightblue;
+  grid-area: sidebar;
 }
 
-#project-5 {
-  background-color: green;
+#content1 {
+  background-color: var(--orange);
+  grid-area: content1;
 }
 
-#project-6 {
-  background-color: green;
+#content2 {
+  background-color: var(--charcoal);
+  grid-area: content2;
+}
+
+#content3 {
+  background-color: lightgreen;
+  grid-area: content3;
+}
+
+footer {
+  background-color: var(--yellow);
+  grid-area: footer;
 }
 
 /* for mobile: */
@@ -197,6 +208,19 @@ nav-item:first-child {
   margin-left: 0rem;
   margin-right: 0rem;
   align-self: center;
+}
+
+.grid-demo {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+  grid-template-areas:
+  "nav"
+  "sidebar"
+  "main"
+  "content1"
+  "content2"
+  "content3"
+  "footer"
 }
 
 /*
