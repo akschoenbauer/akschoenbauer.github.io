@@ -62,7 +62,7 @@ body {
 
 /* text styling */
 h1 {
-  color: var(--blue);
+  color: var(--cream);
   font-family: "Funkydori", cursive;
   font-size: 4rem;
   line-height: 75%;
@@ -72,7 +72,6 @@ h2 {
   color: var(--yellow);
   font-family: "Funkydori", cursive;
   font-size: 3.2rem;
-  padding: 15px 0px 0px 0px;
   line-height: 90%;
 }
 
@@ -81,11 +80,10 @@ h3 {
   font-family: "Funkydori", cursive;
   font-size: 2.4rem;
   line-height: 75%;
-  padding: 5px 0px 0px 0px;
 }
 
 p {
-  color: var(--blue);
+  color: var(--cream);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -166,7 +164,7 @@ a:hover {
   display: grid;
   height: 75vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .6fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
     "title pfp"
     "body pfp"
@@ -194,9 +192,11 @@ a:hover {
 
 .pfp {
   grid-area: pfp;
+  background: url("/img/profilePic.jpeg") center center;
+  background-size: cover;
+  aspect-ratio: 2 / 2.5;
   background-color: var(--pink);
   border-radius: 1rem;
-  border: .5rem dashed var(--blue);
 }
 
 /* home page work grid */
@@ -225,6 +225,9 @@ a:hover {
 #project1 {
   /* display: flex;
   flex-direction: column; */
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: var(--orange);
   grid-area: project1;
   border-radius: 1rem;
@@ -233,33 +236,58 @@ a:hover {
 }
 
 #project2 {
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: lightgreen;
   grid-area: project2;
   border-radius: 1rem;
+  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
 }
 
 #project3 {
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: var(--charcoal);
   grid-area: project3;
   border-radius: 1rem;
+  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
 }
 
 #project4 {
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: var(--pink);
   grid-area: project4;
   border-radius: 1rem;
+  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
 }
 
 #project5 {
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: var(--blue);
   grid-area: project5;
   border-radius: 1rem;
+  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
 }
 
 #project6 {
+  background: url("/img/thumbplaceholder.png") center center;
+  background-size: cover;
+  aspect-ratio: 3 / 1;
   background-color: var(--yellow);
   grid-area: project6;
   border-radius: 1rem;
+  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
 }
 
 .grid-demo {
@@ -351,7 +379,7 @@ nav-item:first-child {
 /* about me grid */
 .about-grid {
   grid-template-columns: 1fr;
-  grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
   "title"
   "pfp"
