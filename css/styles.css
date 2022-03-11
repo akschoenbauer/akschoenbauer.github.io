@@ -171,9 +171,65 @@ a:hover {
   border-radius: 1rem;
 }
 
+/* image hover gallery demo */
+.work-gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-gap: 1rem;
+  margin: 2rem .5rem 2rem .5rem;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 3 / 2;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 250ms ease-out;
+}
+
+.card-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 246, 240, 0.2);
+  backdrop-filter: blur(1px);
+  opacity:0;
+  transition:opacity 500ms;
+}
+
+.card-details h4 {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  color: var(--cream);
+  position: relative;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.card-details:hover {
+  opacity:1;
+}
+
+/* new code vs old divider */
 /* home page work grid */
+/*
 .work-grid {
   display: grid;
+  justify-content: center;
   height: 175vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr 2fr;
@@ -187,6 +243,55 @@ a:hover {
   font-size: 3rem;
   color: var(--cream);
 }
+
+.proj-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  aspect-ratio: 3 / 2;
+  cursor: pointer;
+  position: relative;
+}
+
+.proj-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease-out;
+}
+
+.proj-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  padding: .5rem;
+  opacity: 35%;
+  transition:opacity 350ms;
+}
+
+.proj-details h4 {
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--blue);
+}
+
+.proj-details:hover {
+  opacity:1;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
 
 .work-grid a {
   color: var(--cream);
@@ -206,7 +311,7 @@ a:hover {
   justify-content: center;
   align-content: center;
 }
-
+/*
 #project1 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
@@ -332,6 +437,8 @@ a:hover {
   align-content: center;
   text-align: center;
 }
+*/
+
 
 .grid-demo {
   display: grid;
@@ -406,7 +513,18 @@ nav-item:first-child {
   align-self: center;
 }
 
+/* work gallery */
+.work-gallery {
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
+}
+
+.card-details:active {
+  opacity:1;
+}
+
 /* home page grid */
+/*
 .work-grid {
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
@@ -418,6 +536,7 @@ nav-item:first-child {
   "project5"
   "project6";
 }
+*/
 
 /* about me grid */
 .about-grid {
