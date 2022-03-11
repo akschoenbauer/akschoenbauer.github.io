@@ -144,21 +144,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* image grid demo https://css-tricks.com/positioning-overlay-content-with-css-grid/ */
-.img-grid-demo {
-  display: grid;
-  grid-template-areas: "container";
-  place-items: center;
-  place-content: center;
-  overflow: hidden;
-  max-height: clamp(45rem 50vh 60rem);
-}
-
-.img-grid-demo > * {
-  grid-area: container;
-  max-width: 100rem;
-}
-
 /* about me page grid */
 .about-grid {
   display: grid;
@@ -171,19 +156,21 @@ a:hover {
     "body pfp"
     "body pfp";
   grid-gap: 3rem;
-  margin: 3rem 15rem 2rem 15rem;
+  margin: 3rem 15rem 3rem 15rem;
 }
 
 .page-title {
-  background-color: var(--yellow);
+  background-color: var(--blue);
   grid-area: title;
   border-radius: 1rem;
   text-align: center;
   padding: 1rem 3rem 1rem 3rem;
+  justify-content: center;
+  align-content: center;
 }
 
 .body-copy {
-  background-color: var(--orange);
+  background-color: var(--pink);
   color: var(--cream);
   grid-area: body;
   border-radius: 1rem;
@@ -216,77 +203,136 @@ a:hover {
   color: var(--cream);
 }
 
-/*
-.project-center {
+
+.center-overlay {
   flex-grow: 1;
+  justify-content: center;
+  align-content: center;
 }
-*/
 
 #project1 {
-  /* display: flex;
-  flex-direction: column; */
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
-  background-color: var(--orange);
+  aspect-ratio: 3 / 2;
+  background-color: var(--blue);
   grid-area: project1;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project1 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 #project2 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
-  background-color: lightgreen;
+  aspect-ratio: 3 / 2;
+  background-color: var(--blue);
   grid-area: project2;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project2 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 #project3 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
-  background-color: var(--charcoal);
+  aspect-ratio: 3 / 2;
+  background-color: var(--blue);
   grid-area: project3;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project3 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 #project4 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
-  background-color: var(--pink);
+  aspect-ratio: 3 / 2;
+  background-color: var(--blue);
   grid-area: project4;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project4 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 #project5 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
+  aspect-ratio: 3 / 2;
   background-color: var(--blue);
   grid-area: project5;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project5 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 #project6 {
   background: url("/img/thumbplaceholder.png") center center;
   background-size: cover;
-  aspect-ratio: 3 / 1;
-  background-color: var(--yellow);
+  aspect-ratio: 3 / 2;
+  background-color: var(--blue);
   grid-area: project6;
   border-radius: 1rem;
-  padding: 12rem 3rem 10rem 3rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#project6 .center-overlay {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 3rem 3rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
