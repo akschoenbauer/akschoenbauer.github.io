@@ -109,16 +109,15 @@ a:hover {
 }
 
 .btn-primary {
-  font-family: JosefinSans;
-  font-size: 2rem;
+  font-family: "Josefin Sans";
+  font-size: 1.8rem;
   text-align: center;
-  font-weight: 800;
   text-decoration: none;
   color: var(--pink);
   background-color: var(--cream);
   border: .25rem solid var(--blue);
   outline: none;
-  border-radius: .56rem;
+  border-radius: .75rem;
   padding: 1rem 1rem .8rem 1rem;
   transition: all 200ms ease;
   cursor: pointer;
