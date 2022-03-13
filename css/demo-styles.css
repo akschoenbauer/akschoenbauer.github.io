@@ -265,30 +265,6 @@ footer {
   background-color: var(--pink);
 }
 
-/* for mobile: */
-@media screen and (max-width: 800px) {
-/* project page grid */
-.grid-demo {
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-  grid-template-areas:
-  "nav"
-  "sidebar"
-  "main"
-  "content1"
-  "content2"
-  "content3"
-  "footer";
-}
-
-  hr {
-    height: .5rem;
-    color: var(--yellow);
-    background-color: var(--yellow);
-    border: solid;
-  }
-}
-
 /* about me page grid */
 .about-grid {
   display: grid;
@@ -342,4 +318,45 @@ footer {
   background-color: var(--pink);
   border-radius: 1rem;
   position: inherit;
+}
+
+/* for mobile: */
+@media screen and (max-width: 800px) {
+/* project page grid */
+.grid-demo {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+  grid-template-areas:
+  "nav"
+  "sidebar"
+  "main"
+  "content1"
+  "content2"
+  "content3"
+  "footer";
+}
+
+  hr {
+    height: .5rem;
+    color: var(--yellow);
+    background-color: var(--yellow);
+    border: solid;
+  }
+  /* about me grid */
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title"
+    "pfp"
+    "pfp"
+    "pfp"
+    "pfp"
+    "body"
+    "body"
+    "body"
+    "body";
+    margin: 3rem 3rem 3rem 3rem;
+    grid-gap: 2rem;
+  }
 }

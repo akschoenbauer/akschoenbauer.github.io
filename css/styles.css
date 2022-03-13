@@ -262,37 +262,54 @@ i {
   font-size: 1.7rem;
 }
 
-/* w3schools flexbox tutorial - tabasco page grid */
+/* tabasco project page grid */
 .tabasco-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 1rem .5rem 1rem .5rem;
 }
 
 .tabasco-item {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  height: 60vh;
   background-color: var(--blue);
   border-radius: 1rem;
   margin: 1rem;
-  padding: 1rem;
+  object-fit: contain;
+  overflow: hidden;
   object-position: center;
   align-items: center;
   justify-content: center;
 }
 
+.img-fill {
+  resize: both;
+  overflow: auto;
+}
+
+#w-img {
+  height: 60vh;
+/*  max-width: 60%;
+  max-height: 60%;*/
+}
+
 .tabasco-img {
-  max-width: 100%;
-  max-height: 100%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  resize: both;
+  overflow: hidden;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .tabasco-item h4 {
   color: var(--cream);
+  padding: 1.2rem;
   font-size: 4rem;
   line-height: 4.5rem;
   text-align: center;
@@ -300,18 +317,20 @@ i {
 
 .tabasco-item h5 {
   color: var(--cream);
+  padding: 1.2rem;
   font-size: 2rem;
   line-height: 2.5rem;
   text-align: center;
 }
 
+.tabasco-item p {
+  padding: 1.2rem;
+}
+
 #tabasco-title {
-  flex-grow: 0;
+  height: 60vh;
 }
 
-#vert-img {
-
-}
 
 /* for mobile: */
 @media screen and (max-width: 800px) {
@@ -348,24 +367,6 @@ nav-item:first-child {
   opacity:90%;
 }
 
-/* about me grid */
-.about-grid {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "title"
-  "pfp"
-  "pfp"
-  "pfp"
-  "pfp"
-  "body"
-  "body"
-  "body"
-  "body";
-  margin: 3rem 3rem 3rem 3rem;
-  grid-gap: 2rem;
-}
-
 /* hire me grid */
 .hire-grid {
   display: grid;
@@ -389,14 +390,8 @@ nav-item:first-child {
   font-size: 5.5rem;
   margin: 3rem 1rem 1rem 1rem;
 }
+}
 
 /* for desktop: */
 @media screen and (min-width: 801px) {
-  hr {
-    height: .5rem;
-    color: var(--yellow);
-    background-color: var(--yellow);
-    border: solid;
-  }
-}
 }
