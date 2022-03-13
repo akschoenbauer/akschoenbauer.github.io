@@ -273,6 +273,7 @@ i {
 }
 
 .tabasco-item {
+  flex-grow: 1;
   background-color: var(--blue);
   border-radius: 1rem;
   margin: 1rem;
@@ -312,22 +313,21 @@ i {
   padding: 1.2rem;
 }
 
-#tabasco-title {
-  flex-grow: 1;
+#w-img {
+  flex-basis: 40%;
 }
 
-#w-img {
-  flex-shrink: 3;
+#tabasco-title {
+
 }
 
 #tabasco-about {
-  flex-grow: 1;
+  background-color: var(--pink);
 }
 
 #tabasco-desc {
-  flex-shrink:1;
-}
 
+}
 
 /* for mobile: */
 @media screen and (max-width: 800px) {
