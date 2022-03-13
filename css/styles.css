@@ -273,9 +273,6 @@ i {
 }
 
 .tabasco-item {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
   background-color: var(--blue);
   border-radius: 1rem;
   margin: 1rem;
@@ -286,23 +283,11 @@ i {
   justify-content: center;
 }
 
-.img-fill {
-  resize: both;
-  overflow: auto;
-}
-
-#w-img {
-  height: 60vh;
-/*  max-width: 60%;
-  max-height: 60%;*/
-}
-
 .tabasco-img {
   display: flex;
   height: 100%;
   width: 100%;
-  resize: both;
-  overflow: hidden;
+  overflow: auto;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -328,7 +313,19 @@ i {
 }
 
 #tabasco-title {
-  height: 60vh;
+  flex-grow: 1;
+}
+
+#w-img {
+  flex-shrink: 3;
+}
+
+#tabasco-about {
+  flex-grow: 1;
+}
+
+#tabasco-desc {
+  flex-shrink:1;
 }
 
 
