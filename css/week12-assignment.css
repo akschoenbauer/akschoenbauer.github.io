@@ -40,7 +40,6 @@ header {
   font-size: 34px;
   text-align: center;
   padding: 15px 10px 0px 10px;
-  border-bottom: 1px solid var(--yellow);
   color: var(--cream);
   font-family: "Funkydori", cursive;
 }
@@ -90,12 +89,12 @@ header {
 }
 
 .new-quote {
-  background-color: var(--orange);
+  background-color: var(--pink);
   margin-bottom: 15px;
 }
 
 .new-quote:hover {
-  background-color: var(--pink);
+  background-color: var(--orange);
 }
 
 .new-quote:disabled {
