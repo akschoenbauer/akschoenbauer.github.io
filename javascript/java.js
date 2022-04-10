@@ -43,6 +43,7 @@ const dogButton = document.querySelector('#js-new-dog');
   /* in the parenthesis: ('click' --> corresponds to what event we're looking for, getDog --> will be the function
      name that will tell the code what to do when this event happens) */
 dogButton.addEventListener('click', getDog);
+dogButton.addEventListener('click', getDogMessage);
 
 // step 3: assign a variable to the API LINK// assign a variable to the cat fact API link
 const endpoint = "https://dog.ceo/api/breeds/image/random"
@@ -76,10 +77,36 @@ async function getDog () {
     }
 }
 
-// step 5: write a function to display the cat fact returned by the API request
+// step 5: write a function to display the dog image returned by the API request
 function displayDog(image) {
   // create a variable that will look for where we want the cat fact to appear in our HTML
   const dogImageSrc = document.getElementById('dog-img').src = `${image}`;
   // then we will tell the code to make the text content = what the "quote" element is from the JSON file from the API
   dogImageSrc.textContent = image
+}
+
+// step 6: write an array and function to display little messages with each dog photo
+// array JS
+dogMessageArray = [
+  "a very good boy",
+  "look at this 12/10 floofer",
+  "an absolute unit of a doggo",
+  "who could resist this sweet face",
+  "bork bork henlo doggo",
+  "13/10 such a good girl",
+  "how do u say 'you're the most precious thing in the universe' in dog?",
+  "hello mr. pupper how can i help u today?",
+  "hiya doggo!",
+  "will u please be my forever bff?",
+]
+
+async function getDogMessage() {
+  // get a random index
+  ranIndex= Math.floor(Math.random() * dogMessageArray.length);
+
+  //get an image at the randomIndex
+  selectedMessage = dogMessageArray[ranIndex]
+
+  //display the image
+  document.getElementById("dog-message").textContent = `${selectedMessage}`
 }

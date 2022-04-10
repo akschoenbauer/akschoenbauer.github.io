@@ -39,7 +39,7 @@ header {
   width: 100%;
   font-size: 34px;
   text-align: center;
-  padding: 10px;
+  padding: 15px 10px 0px 10px;
   border-bottom: 1px solid var(--yellow);
   color: var(--cream);
   font-family: "Funkydori", cursive;
@@ -48,13 +48,20 @@ header {
 .quotes {
   padding: 20px 50px;
   min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #dog-img {
   max-width: 500px;
   max-height: 500px;
-  align-items: center;
-  justify-content: center;
+}
+
+#dog-message {
+  color: var(--cream);
+  text-align: center;
+  padding: 10px;
 }
 
 .quote-text {
