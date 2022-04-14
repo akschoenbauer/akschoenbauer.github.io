@@ -525,6 +525,11 @@ nav-item:first-child {
 }
 }
 
+/* week 13 assignment */
+#madLibGenerator {
+  width: 250px;
+}
+
 /* for desktop: */
 @media screen and (min-width: 801px) {
 }
