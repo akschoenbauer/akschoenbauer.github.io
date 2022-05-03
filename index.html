@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ashley schoenbauer - art director</title>
     <script defer src="./javascript/java.js" charset="utf-8"></script>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
@@ -10,138 +9,45 @@
     <link rel="stylesheet" href="https://use.typekit.net/trv0gvx.css">
     <script src="https://kit.fontawesome.com/f805343b5a.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
-<!-- NEW NAV BAR -->
-    <div class="navbar">
-      <div class="logo">
-        <img class="nav-logo" src="img/sitelogotype-01.png" alt="site logo">
-      </div>
-      <a href="/home.html">home</a>
-      <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">work
-        <i id="drop-down-arrow" class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="/tabasco-print-campaign.html">tabasco</a>
-        <a href="/index.html">full project gallery</a>
-        <a href="#">tampax (page coming soon)</a>
-        <a href="#">bang & olufsen (page coming soon)</a>
-        <a href="#">duolingo (page coming soon)</a>
-        <a href="#">budweiser (page coming soon)</a>
-        <a href="#">BuffsEat (page coming soon)</a>
-      </div>
-      </div>
-      <a href="/aboutme.html">about me</a>
-      <a href="/hireme.html">hire me</a>
-    </div>
-
-<!-- OLD NAV BAR -->
-<!--    <navbar>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="/index.html"><img class="nav-logo" src="img/sitelogotype-01.png" alt="site logo"></a></li>
-        <li class="nav-item"><a href="/index.html"><button class="btn-primary">work</button></a></li>
-        <li class="nav-item"><a href="/aboutme.html"><button class="btn-primary">about me</button></a></li>
-        <li class="nav-item"><a href="/hireme.html"><button class="btn-primary">hire me</button></a></li>
-        <li class="nav-item"><a href="/tabasco-print-campaign.html"><button class="btn-primary">tabasco print campaign</button></a></li>
-      </ul>
-    </navbar> -->
-
-<!-- PROJECT GALLERY -->
-    <div class="work-gallery">
-      <div class="card">
-        <img class="card-img" src="/img/Tabasco/TabascoThumb.png" alt="tabasco print campaign thumbnail">
-        <a href="/tabasco-print-campaign.html"><div class="card-details">
-          <h4>Tabasco Sweet & Spicy Sauce Print Campaign | 2020 | Denver One Show Submission</h4>
-        </div></a>
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="/img/workThumbnails/tamponsThumb.png" alt="tampons for men campaign thumbnail">
-        <div class="card-details">
-          <h4>Tampax "Tampons for Men" Print Campaign | 2022 | The Young Ones One Show Shortlist</h4>
+    <!-- NEW NAV BAR -->
+        <div class="navbar">
+          <div class="logo">
+            <img class="nav-logo" src="img/sitelogotype-01.png" alt="site logo">
+          </div>
+          <a href="/index.html">home</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">work
+            <i id="drop-down-arrow" class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="/work.html">full project gallery</a>
+            <a href="/tabasco-print-campaign.html">tabasco</a>
+            <a href="#">tampax (page coming soon)</a>
+            <a href="#">bang & olufsen (page coming soon)</a>
+            <a href="#">duolingo (page coming soon)</a>
+            <a href="#">budweiser (page coming soon)</a>
+            <a href="#">BuffsEat (page coming soon)</a>
+          </div>
+          </div>
+          <a href="/aboutme.html">about me</a>
+          <a href="/hireme.html">hire me</a>
         </div>
-      </div>
 
-      <div class="card">
-        <img class="card-img" src="/img/workThumbnails/b&oThumb.png" alt="b&o campaign thumbnail">
-        <div class="card-details">
-          <h4>Bang & Olufsen "Jam Rooms" Integrated Campaign | 2022 | The Young Ones One Show Shortlist</h4>
+
+      <!-- Page Content Grid -->
+        <div class="home-grid">
+          <div class="home-title">
+            <div><h1>hi there! welcome to my site</h1>
+            <p>i'm ashley, and i'm an art director graduating from CU Boulder with a BS in strategic communications and a minor in creative technology and design. click the button below to check out my most recent art direction work!</p>
+            <button class="btn-primary"><a href="/work.html">my work</a></button>
+            </div>
+          <div class="home-copy">
+            <div class="home-content">
+
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="/img/workThumbnails/duoThumb.png" alt="duolingo campaign thumbnail">
-        <div class="card-details">
-          <h4>"Duolingo Uncensored" Integrated Campaign | 2021 | Denver One Show Bronze Award Winner</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="/img/workThumbnails/budThumb.png" alt="budweiser campaign thumbnail">
-        <div class="card-details">
-          <h4>Budweiser "Dad Up" Integrated Campaign | 2021 | Denver One Show Bronze Award Winner</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card-img" src="/img/workThumbnails/buffsEatThumb.png" alt="buffs eat UX/UI thumbnail">
-        <div class="card-details">
-          <h4>BuffsEat: Spec Website + Social Innovation Program | 2022</h4>
-        </div>
-      </div>
-    </div>
-
-<!--
-    <div class="work-grid">
-      <div class="proj-card" id="project1">
-        <img class="proj-img" src="/img/thumbplaceholder.png" alt="placeholder image">
-        <div class="proj-details">
-          <h4>Project 1 Overlay Text</h4>
-      </div>
-
-      <div class="proj-card" id="project2">
-        <img class="proj-img" src="/img/thumbplaceholder.png" alt="placeholder image">
-        <div class="proj-details">
-          <h4>Project 2 Overlay Text</h4>
-      </div>
-
-      <div class="proj-card" id="project3">
-        <img class="proj-img" src="/img/thumbplaceholder.png" alt="placeholder image">
-        <div class="proj-details">
-          <h4>Project 3 Overlay Text</h4>
-      </div>
-    </div>
--->
-<!--
-    <div class="work-grid">
-        <a href="/projectpage1.html"><div id="project1"><div class="center-overlay">
-          Tabasco Sweet & Spicy Sauce Print Campaign | 2020 | Denver One Show Submission
-        </div>
-      </div></a>
-
-      <a href="#"><div id="project2">
-        <div class="center-overlay">Project 2: Coming Soon</div>
-      </div></a>
-
-      <a href="#"><div id="project3">
-        <div class="center-overlay">Project 3: Coming Soon</div>
-      </div></a>
-
-      <a href="#"><div id="project4">
-        <div class="center-overlay">Project 4: Coming Soon</div>
-      </div></a>
-
-      <a href="#"><div id="project5">
-        <div class="center-overlay">Project 5: Coming Soon</div>
-      </div></a>
-
-      <a href="#"><div id="project6">
-        <div class="center-overlay">Project 6: Coming Soon</div>
-      </div></a>
-
-    </div>
-  -->
 
   </body>
 </html>
