@@ -723,4 +723,8 @@ label {
   #madLibGenerator {
     width: 250px;
   }
+
+  .navbar {
+    flex-direction: column;
+  }
 }
