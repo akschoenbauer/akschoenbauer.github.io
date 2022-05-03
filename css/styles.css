@@ -603,7 +603,7 @@ label {
       "copy"
       "copy"
       "copy";
-    margin: 3rem 3rem 5rem 3rem;
+    margin: 5rem;
     grid-gap: 3rem;
   }
 
@@ -643,13 +643,8 @@ label {
     "copy"
     "copy"
     "copy";
-  margin: 3rem 3rem 5rem 3rem;
+  margin: 5rem;
   grid-gap: 3rem;
-}
-
-.hire-content h1 {
-  font-size: 5.5rem;
-  margin: 3rem 1rem 1rem 1rem;
 }
 }
 
