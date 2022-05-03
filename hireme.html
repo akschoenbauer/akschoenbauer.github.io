@@ -4,22 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hire me!</title>
+    <script defer src="./javascript/java.js" charset="utf-8"></script>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin%20Sans'>
     <link rel="stylesheet" href="https://use.typekit.net/trv0gvx.css">
     <script src="https://kit.fontawesome.com/f805343b5a.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <navbar>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="/index.html"><img class="nav-logo" src="img/sitelogotype-01.png" alt="site logo"></a></li>
-        <li class="nav-item"><a href="/index.html"><button class="btn-primary">work</button></a></li>
-        <li class="nav-item"><a href="/aboutme.html"><button class="btn-primary">about me</button></a></li>
-        <li class="nav-item"><a href="/hireme.html"><button class="btn-primary">hire me</button></a></li>
-        <li class="nav-item"><a href="/tabasco-print-campaign.html"><button class="btn-primary">tabasco print campaign</button></a></li>
-      </ul>
-    </navbar>
+    <!-- NEW NAV BAR -->
+        <div class="navbar">
+          <div class="logo">
+            <img class="nav-logo" src="img/sitelogotype-01.png" alt="site logo">
+          </div>
+          <a href="/home.html">home</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">work
+            <i id="drop-down-arrow" class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="/tabasco-print-campaign.html">tabasco</a>
+            <a href="/index.html">full project gallery</a>
+            <a href="#">tampax (page coming soon)</a>
+            <a href="#">bang & olufsen (page coming soon)</a>
+            <a href="#">duolingo (page coming soon)</a>
+            <a href="#">budweiser (page coming soon)</a>
+            <a href="#">BuffsEat (page coming soon)</a>
+          </div>
+          </div>
+          <a href="/aboutme.html">about me</a>
+          <a href="/hireme.html">hire me</a>
+        </div>
 
+  <!-- Page Content Grid -->
     <div class="hire-grid">
       <div class="hire-title">
         <div class="hire-content"><img class="hire-about-type" src="img/work-together-text.png" alt="let's work together!"></div>

@@ -153,7 +153,7 @@ a:hover {
 .dropdown-content a {
   float: none;
   color: var(--pink);
-  padding: 1.2rem;
+  padding: 1.1rem;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -170,9 +170,12 @@ a:hover {
 
 #drop-down-arrow {
   color: var(--pink);
+  padding: 0;
+  margin: 0;
 }
 
-/* nav bar */
+/* OLD nav bar */
+/*
 .nav-logo {
   display: flex;
   width: 30rem;
@@ -225,6 +228,8 @@ span {
   background-color: var(--blue);
   color: var(--yellow);
 }
+*/
+
 
 /* home page work gallery */
 .work-gallery {
@@ -579,7 +584,7 @@ label {
 
 /* about me and hire me grids */
 @media screen and (max-width: 1300px) {
-  /* hire me grid */
+  /* hire me & about me grid */
   .hire-grid {
     display: grid;
     justify-content: center;
@@ -601,38 +606,6 @@ label {
 
 /* for mobile: */
 @media screen and (max-width: 800px) {
-  /* nav bar */
-/* .nav-logo {
-  margin-left: 0rem;
-  margin-right: 0rem;
-  height: auto;
-  justify-content: center;
-} */
-
-.nav-logo {
-  display: flex;
-  flex-direction: row;
-  width: 30rem;
-  height: 7.5rem;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.nav-list {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-item {
-  margin: .5rem;
-}
-
-nav-item:first-child {
-  margin-left: 0rem;
-  margin-right: 0rem;
-  align-self: center;
-}
-
 /* new nav bar */
 .navbar {
   flex-direction: column;
@@ -675,6 +648,39 @@ nav-item:first-child {
 }
 }
 
+/* OLD nav bar */
+/* .nav-logo {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  height: auto;
+  justify-content: center;
+} */
+
+/*
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  height: 7.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: .5rem;
+}
+
+nav-item:first-child {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  align-self: center;
+} */
+
 /* for desktop: */
 @media screen and (min-width: 801px) {
 }
@@ -683,5 +689,12 @@ nav-item:first-child {
   /* week 13 assignment */
   #madLibGenerator {
     width: 250px;
+  }
+
+  /* new nav bar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
