@@ -283,6 +283,63 @@ span {
   opacity:1;
 }
 
+/* home page */
+.home-grid {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80%;
+  grid-template-areas:
+    "title";
+  margin: 3rem 3rem 3rem 3rem;
+  grid-gap: 3rem;
+}
+
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--pink);
+  border-radius: 1rem;
+  grid-area: title;
+}
+
+.home-title h1 {
+  font-size: 10rem;
+}
+
+.home-title p {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  padding: 0 4rem 0 4rem;
+}
+
+.btn-primary {
+  font-family: "Josefin Sans";
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--cream);
+  border: .25rem solid var(--blue);
+  outline: none;
+  border-radius: .75rem;
+  padding: 1rem 1rem .8rem 1rem;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow);
+}
+
+.btn-primary a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
 /* hire me AND about me grid */
 .hire-grid {
   display: grid;
@@ -448,6 +505,7 @@ span {
   font-size: 1.6rem;
   line-height: 2.2rem;
 }
+
 
 /* Assignment 11 - JavaScript 1 */
 #java-assignment-grid {
@@ -644,6 +702,18 @@ label {
     "copy"
     "copy";
   margin: 5rem;
+  grid-gap: 3rem;
+}
+
+.home-grid {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    "title";
+  margin: 3rem 3rem 3rem 3rem;
   grid-gap: 3rem;
 }
 }
