@@ -757,15 +757,4 @@ nav-item:first-child {
   #madLibGenerator {
     width: 250px;
   }
-
-  /* new nav bar */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hire-grid {
-    margin: 5rem;
-  }
 }
