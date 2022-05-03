@@ -681,9 +681,6 @@ nav-item:first-child {
   align-self: center;
 } */
 
-/* for desktop: */
-@media screen and (min-width: 801px) {
-}
 
 @media screen and (max-width: 500px) {
   /* week 13 assignment */
@@ -696,5 +693,9 @@ nav-item:first-child {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .hire-grid {
+    margin: 5rem;
   }
 }
