@@ -628,10 +628,6 @@ label {
   grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr;
 }
 
-.card-details {
-  opacity:90%;
-}
-
 /* hire me grid */
 .hire-grid {
   display: grid;
