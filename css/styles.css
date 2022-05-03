@@ -718,40 +718,6 @@ label {
 }
 }
 
-/* OLD nav bar */
-/* .nav-logo {
-  margin-left: 0rem;
-  margin-right: 0rem;
-  height: auto;
-  justify-content: center;
-} */
-
-/*
-.nav-logo {
-  display: flex;
-  flex-direction: row;
-  width: 30rem;
-  height: 7.5rem;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.nav-list {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-item {
-  margin: .5rem;
-}
-
-nav-item:first-child {
-  margin-left: 0rem;
-  margin-right: 0rem;
-  align-self: center;
-} */
-
-
 @media screen and (max-width: 500px) {
   /* week 13 assignment */
   #madLibGenerator {
