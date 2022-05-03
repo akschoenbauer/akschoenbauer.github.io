@@ -381,6 +381,10 @@ span {
   margin: 0;
 }
 
+.hire-content i {
+  padding: 1rem 2rem 1rem .5rem;
+}
+
 /* tabasco project page grid */
 .tabasco-container {
   display: flex;
@@ -602,6 +606,11 @@ label {
     margin: 3rem 3rem 5rem 3rem;
     grid-gap: 3rem;
   }
+
+  .bizcard {
+    justify-content: center
+  }
+
 }
 
 /* for mobile: */
